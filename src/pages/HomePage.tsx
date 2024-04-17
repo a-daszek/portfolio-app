@@ -1,5 +1,7 @@
 import Typewriter from "typewriter-effect";
 import Portfolio from "../assets/portfolio.png";
+import Hotel from "../assets/hotel-booking-app.png";
+import Order from "../assets/food-ordering-app.png";
 import { Link } from "react-router-dom";
 import { Separator } from "@/components/ui/separator";
 import { Mail } from "lucide-react";
@@ -34,17 +36,17 @@ const HomePage = () => {
         Portfolio
       </h2>
       <div className="grid grid-cols-1 xl:grid-cols-3 rounded-lg p-10 gap-5 rounded-lg bg-blue-400">
-        <Link to="/projects">
+        <Link to="/projects/#portfolio">
           {" "}
           <img src={Portfolio} alt="Portfolio" />
         </Link>
-        <Link to="/projects">
+        <Link to="/projects/#hotel">
           {" "}
-          <img src={Portfolio} alt="Portfolio" />
+          <img src={Hotel} alt="Portfolio" />
         </Link>
-        <Link to="/projects">
+        <Link to="/projects/#ordering">
           {" "}
-          <img src={Portfolio} alt="Portfolio" />
+          <img src={Order} alt="Portfolio" />
         </Link>
       </div>
       <Separator />
