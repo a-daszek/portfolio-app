@@ -3,7 +3,6 @@ import Portfolio from "../assets/portfolio.png";
 import Hotel from "../assets/hotel-booking-app.png";
 import Order from "../assets/food-ordering-app.png";
 import { Link } from "react-router-dom";
-import { Separator } from "@/components/ui/separator";
 import { Mail } from "lucide-react";
 
 const HomePage = () => {
