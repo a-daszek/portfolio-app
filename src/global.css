@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+html {
+  background-color: rgb(229, 233, 254);
+}
+
 .Typewriter__wrapper,
 .Typewriter__cursor {
   font-size: 50px;
@@ -47,6 +52,11 @@
   }
 
   .dark {
+    body,
+    html {
+      background-color: rgb(5, 7, 20);
+    }
+
     #header {
       background-color: rgba(0, 0, 0, 0.7);
       backdrop-filter: blur(2px);

@@ -38,21 +38,32 @@ const HomePage = () => {
       <div className="grid grid-cols-1 xl:grid-cols-3 rounded-lg p-10 gap-5 rounded-lg bg-blue-400">
         <Link to="/projects/#portfolio">
           {" "}
-          <img src={Portfolio} alt="Portfolio" />
+          <img
+            className="w-full h-full object-cover object-center"
+            src={Portfolio}
+            alt="Portfolio"
+          />
         </Link>
         <Link to="/projects/#hotel">
           {" "}
-          <img src={Hotel} alt="Portfolio" />
+          <img
+            className="w-full h-full object-cover object-center"
+            src={Hotel}
+            alt="Portfolio"
+          />
         </Link>
         <Link to="/projects/#ordering">
           {" "}
-          <img src={Order} alt="Portfolio" />
+          <img
+            className="w-full h-full object-cover object-center"
+            src={Order}
+            alt="Portfolio"
+          />
         </Link>
       </div>
-      <Separator />
       <div
         id="contact"
-        className="flex flex-col justify-between items-center py-10 rounded-lg shadow-lg"
+        className="flex flex-col justify-between items-center py-10 border-t-2 border-t-blue-500"
       >
         <span className="flex flex-row font-bold text-4xl py-5">
           Kontakt
@@ -62,13 +73,16 @@ const HomePage = () => {
           Jeśli chcesz się ze mną skontaktować w jakiejkolwiek sprawie, wyślij
           wiadomość na mój email!
         </p>
-        <a
-          className="font-bold text-xl py-6 text-blue-500 transition-colors duration-300 hover:text-blue-700"
-          href="mailto:anna.daszynska@protonmail.com"
-          rel="noopener noreferrer"
-        >
-          Napisz do mnie
-        </a>
+
+        <div className="m-4 p-1 rounded-lg from-rose-400 via-fuchsia-500 to-indigo-500 bg-gradient-to-r">
+          <a
+            className="block text-black px-4 text-xl py-2 font-bold rounded-lg bg-white hover:bg-transparent hover:text-white transition dark:bg-black dark:text-white dark:hover:bg-transparent"
+            href="mailto:anna.daszynska@protonmail.com"
+            rel="noopener noreferrer"
+          >
+            Napisz do mnie
+          </a>
+        </div>
       </div>
     </div>
   );

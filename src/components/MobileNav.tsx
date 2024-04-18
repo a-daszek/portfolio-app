@@ -23,7 +23,7 @@ const MobileNav = () => {
             Projekty
           </Link>
           <Link
-            to="about"
+            to="/about"
             className="flex text-gray-500 items-center font-bold"
           >
             O mnie

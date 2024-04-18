@@ -20,9 +20,9 @@ const Footer = () => {
             <LinkedInLogoIcon width={25} height={25} />
           </a>
         </div>
-        <span className="font-bold text-1xl text-white tracking-tight">
+        {/* <span className="font-bold text-1xl text-white tracking-tight">
           Zmień język: PL/EN
-        </span>
+        </span> */}
       </div>
     </div>
   );
