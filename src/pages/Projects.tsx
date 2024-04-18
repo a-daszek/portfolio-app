@@ -1,4 +1,3 @@
-import { Separator } from "@/components/ui/separator";
 import Portfolio from "../assets/portfolio.png";
 import { ArrowUp } from "lucide-react";
 import Hotel from "../assets/hotel-booking-app.png";

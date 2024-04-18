@@ -1,4 +1,3 @@
-import { Separator } from "@/components/ui/separator";
 import { MusicIcon } from "lucide-react";
 import TsIcon from "../assets/ts-icon.svg";
 import ReactIcon from "../assets/react.svg";
