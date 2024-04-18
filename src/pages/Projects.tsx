@@ -13,7 +13,6 @@ const Projects = () => {
       >
         Moje projekty
       </h1>
-      <Separator />
       <div className="grid grid-rows-2 lg:grid-cols-[1fr_2fr] text-center">
         <a href="https://food-ordering-app-frontend-0o2x.onrender.com">
           <img

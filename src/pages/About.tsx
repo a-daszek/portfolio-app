@@ -14,7 +14,6 @@ const About = () => {
       <h1 className="lg:py-8 font-bold md:text-2xl text-2xl py-4 text-center border-b-2 border-b-blue-500">
         O mnie
       </h1>
-      <Separator />
       <div className="text-center lg:grid lg:grid-rows-2 lg:grid-cols-[2fr_1fr] items-center">
         <div className="lg:text-xl md:text-2xl">
           Lubię tworzyć od kiedy pamiętam, a jak wiadomo, niemal każda forma

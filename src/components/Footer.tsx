@@ -22,7 +22,7 @@ const Footer = () => {
         </div>
         {/* <span className="font-bold text-1xl text-white tracking-tight">
           Zmień język: PL/EN
-        </span> */}
+        </span> kiedyś to zaimplementuję */}
       </div>
     </div>
   );
