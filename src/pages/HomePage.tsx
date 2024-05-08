@@ -7,20 +7,19 @@ import { Mail } from "lucide-react";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col gap-12">
-      <div className="md:px-32 py-4 gap-2 text-center">
-        <div className="Typewriter__wrapper Typewriter__cursor py-8"></div>
+    <div className="flex flex-col py-16 gap-12">
+      <div className="md:px-32 py-6 gap-2 text-center">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
               .typeString("Hello World!")
-              .pauseFor(2500)
+              .pauseFor(700)
               .deleteAll()
               .typeString("Koduję")
-              .pauseFor(2500)
+              .pauseFor(700)
               .deleteAll()
               .typeString("Piszę")
-              .pauseFor(2500)
+              .pauseFor(700)
               .deleteAll()
               .typeString("Tworzę strony w internecie")
               .start();
@@ -29,7 +28,7 @@ const HomePage = () => {
       </div>
       <h1 className="text-gray-500 py-10 font-bold text-2xl">
         Jestem studentką trzeciego roku informatyki <br />i zgłębiam wiedzę na
-        temat fullstack web developmentu.
+        temat web developmentu.
       </h1>
       <h2 className="font-bold tracking-tight text-3xl py-6 border-b-2 border-b-blue-500">
         Portfolio
@@ -48,7 +47,7 @@ const HomePage = () => {
           <img
             className="w-full h-full object-cover object-center"
             src={Hotel}
-            alt="Portfolio"
+            alt="Hotel"
           />
         </Link>
         <Link to="/projects/#ordering">
@@ -56,7 +55,7 @@ const HomePage = () => {
           <img
             className="w-full h-full object-cover object-center"
             src={Order}
-            alt="Portfolio"
+            alt="Order"
           />
         </Link>
       </div>

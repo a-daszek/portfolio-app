@@ -2,6 +2,7 @@ import Portfolio from "../assets/portfolio.png";
 import { ArrowUp } from "lucide-react";
 import Hotel from "../assets/hotel-booking-app.png";
 import Order from "../assets/food-ordering-app.png";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -12,25 +13,30 @@ const Projects = () => {
       >
         Moje projekty
       </h1>
-      <div className="grid grid-rows-2 lg:grid-cols-[1fr_2fr] text-center">
-        <a href="https://food-ordering-app-frontend-0o2x.onrender.com">
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-[1fr_2fr] text-center">
+        <a
+          href="https://food-ordering-app-frontend-0o2x.onrender.com"
+          rel="noopener noreferrer"
+        >
           <img
-            className="rounded-lg shadow-lg border-4 border-indigo-300 hover:rotate-1 hover:duration-300 hover:delay-100"
+            className="rounded-lg shadow-lg shadow-green-600 border-4 border-green-500 hover:rotate-1 hover:duration-300 hover:delay-100"
             src={Order}
             alt="projekt"
           />
         </a>
-        <div className="text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-green-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
-          Platforma do zamawiania jedzenia na dowóz z wybranej przez użytkownika
-          restauracji. Wykorzystane narzędzia i technologie to m.in: React,
-          Typescript, Vite, Node.js, Express, JWT, MongoDB, Mongoose, Auth0,
-          multer, cors, Stripe, Tailwind, shadcn, Postman. <br /> Dane do
-          przetestowania strony:
+        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-green-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
+          Platforma do zamawiania jedzenia na dowóz. Spróbuj wyszukać
+          restaurację w Katowicach, a jeśli chcesz więcej wyników, sprawdź
+          Londyn bądź Manchester.
+          <Link to="/projects/ordering">
+            <p className="text-blue-700 hover:text-blue-900">
+              Poczytaj o strukturze i implementacji funkcjonalności...
+            </p>
+          </Link>
+          Dane do przetestowania strony:
           <br />
           email: test@test.com
           <br /> hasło: Zaq12wsx! <br />
-          Spróbuj wyszukać restaurację w Katowicach, a jeśli chcesz zobaczyć
-          więcej wyników, wypróbuj "Manchester" lub "London".
         </div>
         <span id="portfolio" className="font-bold p-3 flex flex-row">
           food-ordering-app <ArrowUp />
@@ -38,39 +44,45 @@ const Projects = () => {
         </span>
       </div>
 
-      <div className="grid grid-rows-2 lg:grid-cols-[1fr_2fr] text-center">
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-[1fr_2fr] text-center">
         <img
-          className="rounded-lg shadow-lg border-4 border-indigo-300 hover:rotate-1 hover:duration-300 hover:delay-100"
+          className="rounded-lg shadow-lg shadow-gray-600 border-4 border-gray-500 hover:rotate-1 hover:duration-300 hover:delay-100"
           src={Portfolio}
           alt="projekt 2"
         />
-        <div className="text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-gray-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
+        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-gray-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
           Na tej stronie teraz jesteś, zrobiłam ją wykorzystując React, shadcn,
           Vite, lucide-react, react-dom, Tailwind oraz react-router-dom.
+          <br />
+          Niedługo chciałabym dodać również możliwość zmiany języka z polskiego
+          na angielski z pomocą biblioteki i18next oraz podstronę z blogiem.
         </div>
         <span className="font-bold p-3">portfolio-app</span>
       </div>
 
       <div
         id="hotel"
-        className="grid grid-rows-2 lg:grid-cols-[1fr_2fr] text-center"
+        className="md:grid md:grid-cols-2 lg:grid-cols-[1fr_2fr] text-center"
       >
         <a
           href="https://booking-app-pqmb.onrender.com"
           rel="noopener noreferrer"
         >
           <img
-            className="rounded-lg shadow-lg border-4 border-indigo-300 hover:rotate-1 hover:duration-300 hover:delay-100"
+            className="rounded-lg shadow-lg shadow-blue-600 border-4 border-blue-500 hover:rotate-1 hover:duration-300 hover:delay-100"
             src={Hotel}
             alt="projekt 3"
           />
         </a>
-        <div className="text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-blue-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
-          Strona do robienia rezerwacji w hotelach. Wykorzystane narzędzia i
-          technologie to m.in: Vite, React, Tailwind, Node.js, Typescript,
-          Express, cors, bcryptjs, JWT, multer, Mongoose, MongoDB, Stripe,
-          Postman, Playwright - testy.
-          <br /> Dane do przetestowania strony:
+        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-blue-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
+          Strona do robienia rezerwacji w hotelach. Moja pierwsza większa
+          aplikacja zrobiona w stacku MERN, jeszcze nie wszystko jest idealne.
+          <Link to="/projects/booking">
+            <p className="text-blue-700 hover:text-blue-900">
+              Dowiedz się więcej...
+            </p>
+          </Link>
+          Dane do przetestowania strony:
           <br />
           email: test@test.com <br /> hasło: zaq12wsx
         </div>

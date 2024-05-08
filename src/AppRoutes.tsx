@@ -8,6 +8,8 @@ import {
 import HomePage from "./pages/HomePage";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
+import OrderingPlatform from "./pages/OrderingPlatform";
+import BookingApp from "./pages/BookingApp";
 
 const AppRoutes = () => {
   return (
@@ -26,6 +28,22 @@ const AppRoutes = () => {
           element={
             <Layout>
               <Projects />
+            </Layout>
+          }
+        />
+        <Route
+          path="/projects/ordering"
+          element={
+            <Layout>
+              <OrderingPlatform />
+            </Layout>
+          }
+        />
+        <Route
+          path="/projects/booking"
+          element={
+            <Layout>
+              <BookingApp />
             </Layout>
           }
         />
