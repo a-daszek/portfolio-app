@@ -1,3 +1,5 @@
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import Order from "../assets/food-ordering-app.png";
 import StructureFront from "../assets/structure-front.png";
 import StructureBack from "../assets/structure-back.png";
@@ -5,6 +7,19 @@ import ManageRestaurant from "../assets/manage-restaurant.gif";
 import OrderingGif from "../assets/ordering.gif";
 
 const OrderingPlatform = () => {
+  const codeString = `const Footer = () => {
+    return (
+      <div className="bg-green-500 py-10">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+          <span className="text-3xl text-white font-bold tracking-tight">
+            d0stawa.com
+          </span>
+        </div>
+      </div>
+    );
+  };
+  
+  export default Footer;`;
   return (
     <div className="container mx-auto">
       <div className="flex flex-col flex-wrap py-8 items-center">
@@ -79,24 +94,38 @@ const OrderingPlatform = () => {
             </h2>
             <div className="py-4">
               <p className="text-blue-500">Components folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Zgodnie z praktyką pisania w React, w folderze frontu znajdują
                 się komponenty - są to części jakie składają się na strony w
                 aplikacji webowej, np. LoadingButton, Header czy navbar mobilny,
                 jak również elementy charakterystyczne dla danej strony, np.
                 OrderStatusDetail, CuisineFilter.
               </p>
+              <div>
+                <SyntaxHighlighter
+                  language="javascript"
+                  style={atomOneDark}
+                  wrapLongLines={true}
+                  customStyle={{
+                    lineHeight: "1.2",
+                    fontSize: "0.8rem",
+                    wordBreak: "break-all",
+                  }}
+                >
+                  {codeString}
+                </SyntaxHighlighter>
+              </div>
             </div>
             <div className="py-4">
               <p className="text-blue-500">Layouts folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Layout.tsx określa wygląd każdej strony w naszej aplikacji i ma
                 on w sobie trzy komponenty - Header, Hero oraz Footer.
               </p>
             </div>
             <div className="py-4">
               <p className="text-blue-500">Pages folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 W tym folderze znajdują się pliki stron - mają one taką samą
                 budowę jak komponenty, oraz same w sobie posiadają komponenty z
                 folderu Components.
@@ -104,7 +133,7 @@ const OrderingPlatform = () => {
             </div>
             <div className="py-4">
               <p className="text-blue-500">Forms folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Formy to komponenty, na które również składają się...
                 komponenty.
               </p>
@@ -112,7 +141,7 @@ const OrderingPlatform = () => {
             <img src={ManageRestaurant} alt="forma gif" />
             <div className="py-4">
               <p className="text-blue-500">Api folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Tutaj z pomocą react-query zdefiniowane są API do pobierania
                 danych, które zostaną wyświetlone na stronie bądź do tworzenia
                 żądań. Sprawdzamy ich poprawność oraz deklarujemy czego
@@ -123,7 +152,7 @@ const OrderingPlatform = () => {
             </div>
             <div className="py-4">
               <p className="text-blue-500">Auth folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Wszystko co potrzebne do uwierzytelniania użytkowników znajduje
                 się tutaj. Musimy zadeklarować naszego auth0 providera zgodnie z
                 zaleceniami znajdującymi w oficjalnej dokumentacji Auth0 oraz
@@ -133,7 +162,7 @@ const OrderingPlatform = () => {
             </div>
             <div className="py-4">
               <p className="text-blue-500">Config folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Są tu pliki konfiguracyjne, definiują one różne opcje do wyboru,
                 np. jeśli chodzi o kuchnie świata - indyjską, polską, chińską
                 itd.
@@ -141,21 +170,21 @@ const OrderingPlatform = () => {
             </div>
             <div className="py-4">
               <p className="text-blue-500">AppRoutes.tsx</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Dzięki temu plikowi i react-router-dom jesteśmy przekierowywani
                 na inne strony naszego projektu.
               </p>
             </div>
             <div className="py-4">
               <p className="text-blue-500">main.tsx</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Ten plik jest plikiem głównym naszej aplikacji React, który
                 inicjuje ją, renderując jej główny komponent w drzewie DOM.
               </p>
             </div>
             <div className="py-4">
               <p className="text-blue-500">types.ts</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Określa on strukturę danych i zapewnia ich spójność w całej
                 aplikacji dzięki Typescript.
               </p>
@@ -173,7 +202,7 @@ const OrderingPlatform = () => {
             </h2>
             <div className="py-4">
               <p className="text-blue-500">Controllers folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Pliki znajdujące się w tym folderze są odpowiedzialne za
                 wszystkie funkcje obsługujące żądania HTTP w warstwie
                 backendowej w Express.js... tak w ogromnym skrócie.
@@ -187,7 +216,7 @@ const OrderingPlatform = () => {
             </p>
             <div className="py-4">
               <p className="text-blue-500">Middleware folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Tutaj znajdują się dwa pliki, jeden odpowiedzialny za
                 uwierzytelnianie użytkowników, drugi za walidację danych
                 wprowadzanych przy uzupełnianiu danych o swoim koncie oraz
@@ -196,14 +225,14 @@ const OrderingPlatform = () => {
             </div>
             <div className="py-4">
               <p className="text-blue-500">Models folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 W tym folderze zawarte są modele ze zdefiniowanym schematem
                 danych, które są przechowywane w naszej bazie danych.
               </p>
             </div>
             <div className="py-4">
               <p className="text-blue-500">Routes folder</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Znajdują się tutaj pliki określające ścieżki routingu związane z
                 operacjami na zamówieniach, restauracjach, profilu użytkownika i
                 jego restauracjach. Używają middleware do uwierzytelniania
@@ -213,7 +242,7 @@ const OrderingPlatform = () => {
             </div>
             <div className="py-4">
               <p className="text-blue-500">index.ts</p>
-              <p className="text-xl">
+              <p className="md:text-xl text-sm">
                 Ten plik definiuje strukturę i konfigurację głównego serwera
                 aplikacji, obsługując różne ścieżki API i integrując się z bazą
                 danych MongoDB oraz usługą Cloudinary, gdzie przechowywane są
