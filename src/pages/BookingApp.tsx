@@ -49,7 +49,7 @@ const BookingApp = () => {
             <p className="font-bold text-gray-500">Usługi</p>
             <p>Frontend, Backend</p>
           </div>
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <p className="font-bold text-gray-500">Link</p>
             <a
               href="https://booking-app-pqmb.onrender.com"
@@ -58,14 +58,14 @@ const BookingApp = () => {
             >
               booking-app
             </a>
-          </div>
-          <div className="flex flex-col">
+          </div> */}
+          {/* <div className="flex flex-col">
             <p className="font-bold text-gray-500">
               Dane do testowania strony:
             </p>
             <p>email: test@test.com</p>
             <p>hasło: zaq12wsx</p>
-          </div>
+          </div> */}
           <div className="flex flex-col">
             <p className="font-bold text-gray-500">Github</p>
             <a
@@ -94,9 +94,12 @@ const BookingApp = () => {
               <p className="lg:text-sm md:text-xl text-sm">
                 Projekt ten ma bardzo podobną strukturę jak platforma do
                 zamawiania jedzenia oraz użyłam tych samych narzędzi do
-                implementacji znacznej większości funkcjonalności. Nie ma tu
-                natomiast komponentów z biblioteki shadcn, przez co strona
-                rzeczywiście wygląda jak pierwszy, większy projekt. <br />
+                implementacji znacznej większości funkcjonalności, z tego powodu
+                nie utrzymuję stale jego deploymentu na Render, chociaż
+                oczywiście jest możliwe pokazanie jego działania. Wprowadzone
+                funkcje to m.in filtry wyszukiwania, rejestracja i login, czy
+                dodanie własnego hotelu, którego pokój można zarezerwować.
+                <br />
                 Uwierzytelnianie użytkowników zostało przeprowadzone bez pomocy
                 Auth0, co również było dużym wyzwaniem, jednak koniecznym aby
                 zrozumieć ten proces. Dodatkowo, coś co zrobiłam tu i muszę

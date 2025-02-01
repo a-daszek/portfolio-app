@@ -27,7 +27,8 @@ const Projects = () => {
         <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-sm md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-green-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
           Platforma do zamawiania jedzenia na dowóz. Spróbuj wyszukać
           restaurację w Katowicach, a jeśli chcesz więcej wyników, sprawdź
-          Londyn bądź Manchester.
+          Londyn bądź Manchester. Strona jest wdrożona na darmowym planie
+          Render, skąd mogą wynikać początkowe opóźnienia w jej działaniu.
           <Link to="/projects/ordering">
             <p className="text-blue-700 hover:text-blue-900">
               Poczytaj o strukturze i implementacji funkcjonalności...
@@ -64,32 +65,31 @@ const Projects = () => {
         id="hotel"
         className="md:grid md:grid-cols-2 lg:grid-cols-[1fr_2fr] text-center"
       >
-        <a
+        {/* <a
           href="https://booking-app-pqmb.onrender.com"
           rel="noopener noreferrer"
         >
-          <img
-            className="rounded-lg shadow-lg shadow-blue-600 border-4 border-blue-500 hover:rotate-1 hover:duration-300 hover:delay-100"
-            src={Hotel}
-            alt="projekt 3"
-          />
-        </a>
+        </a> */}
+        <img
+          className="rounded-lg shadow-lg shadow-blue-600 border-4 border-blue-500 hover:rotate-1 hover:duration-300 hover:delay-100"
+          src={Hotel}
+          alt="projekt 3"
+        />
         <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-sm md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-blue-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
           Strona do robienia rezerwacji w hotelach. Jest to moja pierwsza
-          większa aplikacja zrobiona w stacku MERN. Wdrożona na darmowym planie
-          na Render, stąd może się długo na początku ładować.
+          większa aplikacja zrobiona w stacku MERN, na której uczyłam się
+          tworzenia filtrów wyszukiwania, autoryzacji czy tego jak działają
+          tokeny.
           <Link to="/projects/booking">
             <p className="text-blue-700 hover:text-blue-900">
               Dowiedz się więcej...
             </p>
           </Link>
-          Dane do przetestowania strony:
+          {/* Dane do przetestowania strony:
           <br />
-          email: test@test.com <br /> hasło: zaq12wsx
+          email: test@test.com <br /> hasło: zaq12wsx */}
         </div>
-        <span className="font-bold p-3 flex flex-row">
-          hotel-booking-app <ArrowUp /> sprawdź
-        </span>
+        <span className="font-bold p-3">hotel-booking-app</span>
       </div>
     </div>
   );
