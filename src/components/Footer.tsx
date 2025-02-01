@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <div className="bg-blue-900 py-5">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        <span className="font-bold text-1xl text-white tracking-tight">
-          © Anna Daszyńska 2024
+        <span className="text-1xl text-white tracking-tight">
+          © Anna Daszyńska 2025
         </span>
         <div className="text-white flex space-x-4">
-          <p className="font-bold tracking-tight">Jestem też tutaj:</p>
+          <p className="tracking-tight">Jestem też tutaj:</p>
           <a href="https://github.com/a-daszek" rel="noopener noreferrer">
             <GitHubLogoIcon width={25} height={25} />
           </a>

@@ -14,26 +14,24 @@ const About = () => {
         O mnie
       </h1>
       {/* <div className="text-center lg:grid lg:grid-rows-2 lg:grid-cols-[2fr_1fr] items-center"> */}
-      <div className="lg:text-xl md:text-2xl text-center">
+      <div className="text-sm lg:text-sm md:text-2xl text-center">
         Lubię tworzyć odkąd pamiętam, a jak wiadomo, niemal każda forma
         ekspresji jest dobra. Początek mojej nauki programowania zaczęłam z
         Pythonem, kiedy brat pokazał mi, jak można ułatwić sobie nim życie,
         automatyzując różne zadania. Później skierowałam się ku stronom
-        internetowym, gdzie skupiałam się wyłącznie na backendzie. Od niedawna
-        pochylam się również nad rzeczami, które sprawiają, że strona nie tylko
-        działa dobrze, ale też wygląda.
+        internetowym, gdzie skupiałam się w większej mierze na backendzie. Od
+        niedawna pochylam się również nad rzeczami, które sprawiają, że strona
+        nie tylko działa dobrze, ale też wygląda. <br></br>Ukończyłam studia
+        inżynierskie pisząc pracę dyplomową pt. "Aplikacja kliencka do tworzenia
+        i weryfikacji podpisu cyfrowego", w ramach której stworzyłam
+        dwupoziomową infrastrukturę klucza publicznego w fikcyjnej domenie, w
+        której użytkownicy mogą przesyłać między sobą podpisane dokumenty za
+        pomocą szyfrowania asymetrycznego.
       </div>
 
-      <div className="text-sm md:text-xl lg:text-xl flex flex-col items-center text-center py-10">
-        W wolnym czasie gram na skrzypcach i jestem członkiem{" "}
-        <a
-          className="font-bold text-blue-700 hover:text-blue-600 transition-colors duration-300"
-          href="https://www.facebook.com/profile.php?id=100091833829398&locale=pl_PL"
-          rel="noopener noreferrer"
-        >
-          Orkiestry Symfonicznej Politechniki Śląskiej,
-        </a>
-        gdzie mogę dzielić się muzyką z innymi <MusicIcon />
+      <div className="text-sm md:text-xl lg:text-sm flex flex-col items-center text-center py-10">
+        W wolnym czasie gram na skrzypcach i jestem członkiem orkiestry
+        akademickiej, gdzie mogę dzielić się muzyką z innymi <MusicIcon />
       </div>
 
       <span className="text-xl flex flex-row flex-wrap items-center text-gray-500 font-bold gap-2">

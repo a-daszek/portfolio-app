@@ -26,20 +26,20 @@ const HomePage = () => {
           }}
         />
       </div>
-      <h1 className="text-gray-500 py-10 font-bold text-2xl">
-        Jestem studentką trzeciego roku informatyki <br />i zgłębiam wiedzę na
-        temat web developmentu.
+      <h1 className="lg:text-xl text-gray-500 py-10 font-bold text-2xl">
+        Jestem studentką informatyki i zgłębiam wiedzę na temat web developmentu
+        i sieci komputerowych.
       </h1>
       <h2 className="font-bold tracking-tight text-3xl py-6 border-b-2 border-b-blue-500">
         Portfolio
       </h2>
       <div className="grid grid-cols-1 xl:grid-cols-3 rounded-lg p-10 gap-5 rounded-lg bg-blue-400">
-        <Link to="/projects/#portfolio">
+        <Link to="/projects/#ordering">
           {" "}
           <img
             className="w-full h-full object-cover object-center"
-            src={Portfolio}
-            alt="Portfolio"
+            src={Order}
+            alt="Order"
           />
         </Link>
         <Link to="/projects/#hotel">
@@ -50,12 +50,12 @@ const HomePage = () => {
             alt="Hotel"
           />
         </Link>
-        <Link to="/projects/#ordering">
+        <Link to="/projects/#portfolio">
           {" "}
           <img
             className="w-full h-full object-cover object-center"
-            src={Order}
-            alt="Order"
+            src={Portfolio}
+            alt="Portfolio"
           />
         </Link>
       </div>
@@ -67,7 +67,7 @@ const HomePage = () => {
           Kontakt
           <Mail className="mx-2" height={40} width={40} />
         </span>
-        <p className="py-7 text-gray-500 font-bold text-2xl tracking-tighter p-3">
+        <p className="py-7 text-gray-500 font-bold text-2xl lg:text-xl tracking-tighter p-3">
           Jeśli chcesz się ze mną skontaktować w jakiejkolwiek sprawie, wyślij
           wiadomość na mój email!
         </p>

@@ -33,7 +33,7 @@ const BookingApp = () => {
           alt="platforma do zamawiania jedzenia"
           className="w-full"
         />
-        <div className="grid grid-cols-2 justify-between py-6 text-xl p-4 gap-2">
+        <div className="grid grid-cols-2 justify-between py-6 text-xl lg:text-sm p-4 gap-2">
           <div className="flex flex-col">
             <p className="font-bold text-gray-500">Projekt</p>
             <p>Platforma do składania rezerwacji w hotelach</p>
@@ -79,7 +79,7 @@ const BookingApp = () => {
         </div>
       </div>
       <div className="flex flex-col">
-        <h1 className="font-bold text-3xl">Struktura projektu</h1>
+        <h1 className="font-bold text-3xl lg:text-xl">Struktura projektu</h1>
         <div className="grid lg:grid-cols-[1fr_2fr] md:grid-cols-2 py-5">
           <img
             src={BookingStructure}
@@ -91,7 +91,7 @@ const BookingApp = () => {
               Frontend i Backend
             </h2>
             <div className="py-4">
-              <p className="md:text-xl text-sm">
+              <p className="lg:text-sm md:text-xl text-sm">
                 Projekt ten ma bardzo podobną strukturę jak platforma do
                 zamawiania jedzenia oraz użyłam tych samych narzędzi do
                 implementacji znacznej większości funkcjonalności. Nie ma tu
@@ -106,7 +106,7 @@ const BookingApp = () => {
             </div>
             <div className="py-4">
               <p className="text-blue-500">auth.spec.ts</p>
-              <p className="md:text-xl text-sm">
+              <p className="lg:text-sm md:text-xl text-sm">
                 Poniżej znajduje się fragment kodu testu, który sprawdza czy
                 zalogowanie się do strony z danym mailem i hasłem przebiega
                 pomyślnie.

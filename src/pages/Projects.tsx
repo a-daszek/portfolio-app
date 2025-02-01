@@ -24,7 +24,7 @@ const Projects = () => {
             alt="projekt"
           />
         </a>
-        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-green-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
+        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-sm md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-green-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
           Platforma do zamawiania jedzenia na dowóz. Spróbuj wyszukać
           restaurację w Katowicach, a jeśli chcesz więcej wyników, sprawdź
           Londyn bądź Manchester.
@@ -50,7 +50,7 @@ const Projects = () => {
           src={Portfolio}
           alt="projekt 2"
         />
-        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-gray-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
+        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-sm md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-gray-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
           Na tej stronie teraz jesteś, zrobiłam ją wykorzystując React, shadcn,
           Vite, lucide-react, react-dom, Tailwind oraz react-router-dom.
           <br />
@@ -74,9 +74,10 @@ const Projects = () => {
             alt="projekt 3"
           />
         </a>
-        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-xl md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-blue-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
-          Strona do robienia rezerwacji w hotelach. Moja pierwsza większa
-          aplikacja zrobiona w stacku MERN, jeszcze nie wszystko jest idealne.
+        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-sm md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-blue-400 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
+          Strona do robienia rezerwacji w hotelach. Jest to moja pierwsza
+          większa aplikacja zrobiona w stacku MERN. Wdrożona na darmowym planie
+          na Render, stąd może się długo na początku ładować.
           <Link to="/projects/booking">
             <p className="text-blue-700 hover:text-blue-900">
               Dowiedz się więcej...
