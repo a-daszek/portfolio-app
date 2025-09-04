@@ -21,9 +21,10 @@ const About = () => {
         automatyzując różne zadania. Później skierowałam się ku stronom
         internetowym, gdzie skupiałam się w większej mierze na backendzie. Od
         niedawna pochylam się również nad rzeczami, które sprawiają, że strona
-        nie tylko działa dobrze, ale też wygląda. <br></br>Ukończyłam studia
-        inżynierskie pisząc pracę dyplomową pt. "Aplikacja kliencka do tworzenia
-        i weryfikacji podpisu cyfrowego", w ramach której stworzyłam
+        nie tylko działa dobrze, ale też wygląda. Piszę też testy automatyczne
+        aby przetestować szybciej napisane funkcjonalności.<br></br>Ukończyłam
+        studia inżynierskie pisząc pracę dyplomową pt. "Aplikacja kliencka do
+        tworzenia i weryfikacji podpisu cyfrowego", w ramach której stworzyłam
         dwupoziomową infrastrukturę klucza publicznego w fikcyjnej domenie, w
         której użytkownicy mogą przesyłać między sobą podpisane dokumenty za
         pomocą szyfrowania asymetrycznego.
@@ -32,6 +33,10 @@ const About = () => {
       <div className="text-sm md:text-xl lg:text-sm flex flex-col items-center text-center py-10">
         W wolnym czasie gram na skrzypcach i jestem członkiem orkiestry
         akademickiej, gdzie mogę dzielić się muzyką z innymi <MusicIcon />
+        Tworzę stronę owej orkiestry, którą można zobaczyć pod adresem:{" "}
+        <a href="https://polibudorkiestra.onrender.com">
+          https://polibudorkiestra.onrender.com
+        </a>
       </div>
 
       <span className="text-xl flex flex-row flex-wrap items-center text-gray-500 font-bold gap-2">

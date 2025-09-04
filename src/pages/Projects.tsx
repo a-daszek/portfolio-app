@@ -2,6 +2,7 @@ import Portfolio from "../assets/portfolio.png";
 import { ArrowUp } from "lucide-react";
 import Hotel from "../assets/hotel-booking-app.png";
 import Order from "../assets/food-ordering-app.png";
+import Orchestra from "../assets/orchestra.png";
 import { Link } from "react-router-dom";
 
 const Projects = () => {
@@ -41,6 +42,30 @@ const Projects = () => {
         </div>
         <span id="portfolio" className="font-bold p-3 flex flex-row">
           food-ordering-app <ArrowUp />
+          sprawdź
+        </span>
+      </div>
+      <div className="md:grid md:grid-cols-2 lg:grid-cols-[1fr_2fr] text-center">
+        <a
+          href="https://polibudorkiestra.onrender.com"
+          rel="noopener noreferrer"
+        >
+          <img
+            className="rounded-lg shadow-lg shadow-red-200 border-4 border-red-300 hover:rotate-1 hover:duration-300 hover:delay-100"
+            src={Orchestra}
+            alt="projekt"
+          />
+        </a>
+        <div className="border-2 border-gray-500 text-gray-800 font-bold lg:text-sm md:text-2xl text-xs tracking-tighter bg-gradient-to-r from-white to-red-200 rounded-lg lg:mt-8 lg:-mb-8 lg:-mx-4 lg:p-6">
+          Strona stworzona dla orkiestry akademickiej Politechniki Śląskiej.
+          Stale w trakcie developmentu, jednak deployment będzie z końcem
+          września tego roku.
+          <br />
+          Strona jest zrobiona z użyciem React, Vite, Tailwind, Typescript,
+          Node.js, Express, MongoDB, Cloudinary.
+        </div>
+        <span id="orchestra" className="font-bold p-3 flex flex-row">
+          orchestra-site <ArrowUp />
           sprawdź
         </span>
       </div>

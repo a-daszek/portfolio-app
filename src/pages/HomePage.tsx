@@ -15,20 +15,20 @@ const HomePage = () => {
               .typeString("Hello World!")
               .pauseFor(700)
               .deleteAll()
-              .typeString("Koduję")
-              .pauseFor(700)
-              .deleteAll()
-              .typeString("Piszę")
-              .pauseFor(700)
-              .deleteAll()
-              .typeString("Tworzę strony w internecie")
+              // .typeString("Koduję")
+              // .pauseFor(700)
+              // .deleteAll()
+              // .typeString("Piszę")
+              // .pauseFor(700)
+              // .deleteAll()
+              // .typeString("Tworzę strony w internecie")
               .start();
           }}
         />
       </div>
       <h1 className="lg:text-xl text-gray-500 py-10 font-bold text-2xl">
         Jestem studentką informatyki i zgłębiam wiedzę na temat web developmentu
-        i sieci komputerowych.
+        i testowania oprogramowania.
       </h1>
       <h2 className="font-bold tracking-tight text-3xl py-6 border-b-2 border-b-blue-500">
         Portfolio
